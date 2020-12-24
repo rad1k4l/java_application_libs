@@ -74,7 +74,7 @@
                             <mainClass>Main</mainClass>
                         </manifest>
                     </archive>
-                    <finalName>task-dispatch</finalName>
+                    <finalName>app-lib</finalName>
                     <appendAssemblyId>false</appendAssemblyId>
                 </configuration>
             </plugin>

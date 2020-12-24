@@ -15,12 +15,13 @@ public class RabbitSend {
             Channel channel = channel();
             channel.exchangeDeclare(exchange, "topic");
             channel.basicPublish(exchange, topic, null, message.getBytes());
-            System.out.println(" [x] Sent '" + topic + "':'" + message + "'");
         } catch (IOException exception) {
             System.out.println("ERROR EXCEPTION: " + exception.getMessage());
             System.exit(21);
         }
     }
+
+
     public static Connection connection()
     {
         return RabbitConnection.getLink();
